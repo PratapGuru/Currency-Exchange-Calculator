@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Range Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="data:image/png;base64,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"
+        alt="" class="money-img">
+    <h1>Exchange Rate Calculator</h1>
+    <p>Choose the curreny and ammounts to get the exchange rate</p>
+
+    <div class="container">
+        <div class="currency">
+            <select id="currency-one">
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR" selected>INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="USD">USD</option>
+                <option value="UYU">UYU</option>
+                <option value="VND">VND</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+            <input type="number" id="amount-one" placeholder="0" value="1" />
+        </div>
+
+        <div class="swap-rate-container">
+            <button class="btn" id="change">
+                Change
+            </button>
+            <div class="rate" id="rate"></div>
+        </div>
+
+        <div class="currency">
+            <select id="currency-two">
+                <option value="AED">AED</option>
+                <option value="ARS">ARS</option>
+                <option value="AUD">AUD</option>
+                <option value="BGN">BGN</option>
+                <option value="BRL">BRL</option>
+                <option value="BSD">BSD</option>
+                <option value="CAD">CAD</option>
+                <option value="CHF">CHF</option>
+                <option value="CLP">CLP</option>
+                <option value="CNY">CNY</option>
+                <option value="COP">COP</option>
+                <option value="CZK">CZK</option>
+                <option value="DKK">DKK</option>
+                <option value="DOP">DOP</option>
+                <option value="EGP">EGP</option>
+                <option value="EUR">EUR</option>
+                <option value="FJD">FJD</option>
+                <option value="GBP">GBP</option>
+                <option value="GTQ">GTQ</option>
+                <option value="HKD">HKD</option>
+                <option value="HRK">HRK</option>
+                <option value="HUF">HUF</option>
+                <option value="IDR">IDR</option>
+                <option value="ILS">ILS</option>
+                <option value="INR">INR</option>
+                <option value="ISK">ISK</option>
+                <option value="JPY">JPY</option>
+                <option value="KRW">KRW</option>
+                <option value="KZT">KZT</option>
+                <option value="MXN">MXN</option>
+                <option value="MYR">MYR</option>
+                <option value="NOK">NOK</option>
+                <option value="NZD">NZD</option>
+                <option value="PAB">PAB</option>
+                <option value="PEN">PEN</option>
+                <option value="PHP">PHP</option>
+                <option value="PKR">PKR</option>
+                <option value="PLN">PLN</option>
+                <option value="PYG">PYG</option>
+                <option value="RON">RON</option>
+                <option value="RUB">RUB</option>
+                <option value="SAR">SAR</option>
+                <option value="SEK">SEK</option>
+                <option value="SGD">SGD</option>
+                <option value="THB">THB</option>
+                <option value="TRY">TRY</option>
+                <option value="TWD">TWD</option>
+                <option value="UAH">UAH</option>
+                <option value="USD" selected>USD</option>
+                <option value="UYU">UYU</option>
+                <option value="VND">VND</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+            <input type="number" id="amount-two" placeholder="0" />
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
